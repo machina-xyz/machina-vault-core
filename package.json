@@ -1,0 +1,69 @@
+{
+  "name": "@machina/vault-core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./passkey": {
+      "import": "./dist/passkey/index.js",
+      "types": "./dist/passkey/index.d.ts"
+    },
+    "./keys": {
+      "import": "./dist/keys/index.js",
+      "types": "./dist/keys/index.d.ts"
+    },
+    "./signing": {
+      "import": "./dist/signing/index.js",
+      "types": "./dist/signing/index.d.ts"
+    },
+    "./policy": {
+      "import": "./dist/policy/index.js",
+      "types": "./dist/policy/index.d.ts"
+    },
+    "./identity": {
+      "import": "./dist/identity/index.js",
+      "types": "./dist/identity/index.d.ts"
+    },
+    "./recovery": {
+      "import": "./dist/recovery/index.js",
+      "types": "./dist/recovery/index.d.ts"
+    },
+    "./mpc": {
+      "import": "./dist/mpc/index.js",
+      "types": "./dist/mpc/index.d.ts"
+    },
+    "./privacy": {
+      "import": "./dist/privacy/index.js",
+      "types": "./dist/privacy/index.d.ts"
+    },
+    "./auth": {
+      "import": "./dist/auth/index.js",
+      "types": "./dist/auth/index.d.ts"
+    },
+    "./enclave": {
+      "import": "./dist/enclave/index.js",
+      "types": "./dist/enclave/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "@noble/curves": "^1.8.0",
+    "@noble/hashes": "^1.7.0",
+    "@simplewebauthn/server": "^11.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
