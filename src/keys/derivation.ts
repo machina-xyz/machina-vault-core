@@ -48,6 +48,9 @@ export const AGENT_PATH = (index: number) =>
 
 const HARDENED_OFFSET = 0x80000000;
 
+/** secp256k1 curve order */
+const SECP256K1_N = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141n;
+
 interface DerivedNode {
   key: Uint8Array; // 32 bytes
   chainCode: Uint8Array; // 32 bytes
@@ -66,12 +69,13 @@ function masterNodeFromSeed(seed: Uint8Array): DerivedNode {
 }
 
 /**
- * Derive a hardened child key from a parent node.
+ * Derive a hardened child key from a parent node (BIP-32 compliant).
  *
  * data = 0x00 || parentKey(32) || uint32BE(index + 0x80000000)
  * I = HMAC-SHA512(key=parentChainCode, data)
- * childKey = I[0:32]
- * childChainCode = I[32:64]
+ * IL = I[0:32], IR = I[32:64]
+ * childKey = (parse256(IL) + parentKey) mod n
+ * childChainCode = IR
  */
 function deriveHardenedChild(
   parentKey: Uint8Array,
@@ -91,9 +95,29 @@ function deriveHardenedChild(
   data[36] = hardenedIndex & 0xff;
 
   const I = hmac(sha512, parentChainCode, data);
+
+  // BIP-32: childKey = (parse256(IL) + parentKey) mod n
+  const IL = I.slice(0, 32);
+  const IR = I.slice(32, 64);
+
+  const ilBigInt = bytesToBigInt(IL);
+  const parentKeyBigInt = bytesToBigInt(parentKey);
+  const childKeyBigInt = (ilBigInt + parentKeyBigInt) % SECP256K1_N;
+
+  // Per BIP-32 spec: if IL >= n or childKey === 0, the key is invalid.
+  // In practice this is astronomically unlikely (~1 in 2^128).
+  if (ilBigInt >= SECP256K1_N || childKeyBigInt === 0n) {
+    throw new Error(
+      "BIP-32 child key derivation produced invalid key (IL >= n or result is zero). " +
+      "This is astronomically unlikely — try the next index.",
+    );
+  }
+
+  const childKey = bigIntToBytes(childKeyBigInt, 32);
+
   return {
-    key: I.slice(0, 32),
-    chainCode: I.slice(32, 64),
+    key: childKey,
+    chainCode: IR,
   };
 }
 
@@ -241,6 +265,16 @@ function bytesToBigInt(bytes: Uint8Array): bigint {
     result = (result << 8n) | BigInt(byte);
   }
   return result;
+}
+
+function bigIntToBytes(value: bigint, length: number): Uint8Array {
+  const bytes = new Uint8Array(length);
+  let remaining = value;
+  for (let i = length - 1; i >= 0; i--) {
+    bytes[i] = Number(remaining & 0xffn);
+    remaining >>= 8n;
+  }
+  return bytes;
 }
 
 function bytesToHex(bytes: Uint8Array): string {

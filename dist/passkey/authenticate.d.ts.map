@@ -1,0 +1,1 @@
+{"version":3,"file":"authenticate.d.ts","sourceRoot":"","sources":["../../src/passkey/authenticate.ts"],"names":[],"mappings":"AAAA;;;;;GAKG;AAEH,OAAO,KAAK,EAAE,mBAAmB,EAAE,oBAAoB,EAAE,MAAM,YAAY,CAAC;AAM5E;;;;;;;;GAQG;AACH,wBAAsB,iBAAiB,CACrC,OAAO,EAAE,mBAAmB,GAC3B,OAAO,CAAC,oBAAoB,CAAC,CAgD/B"}

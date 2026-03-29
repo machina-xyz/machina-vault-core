@@ -1,0 +1,1 @@
+{"version":3,"file":"challenge.d.ts","sourceRoot":"","sources":["../../src/passkey/challenge.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAEH,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,YAAY,CAAC;AAQjD;;;;;GAKG;AACH,wBAAgB,iBAAiB,IAAI,cAAc,CAYlD;AAED;;GAEG;AACH,wBAAgB,iBAAiB,CAAC,SAAS,EAAE,cAAc,GAAG,OAAO,CAQpE;AAED;;;GAGG;AACH,wBAAgB,iBAAiB,CAAC,SAAS,EAAE,cAAc,GAAG,IAAI,CAEjE"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/policy/index.ts"],"names":[],"mappings":"AAAA;;;GAGG;AAcH,SAAS;AACT,OAAO,EAAE,YAAY,EAAE,MAAM,aAAa,CAAC;AAE3C,uBAAuB;AACvB,OAAO,EAAE,iBAAiB,EAAE,MAAM,iBAAiB,CAAC;AAGpD,UAAU;AACV,OAAO,EACL,mBAAmB,EACnB,eAAe,EACf,iBAAiB,EACjB,eAAe,GAChB,MAAM,cAAc,CAAC;AAEtB,0BAA0B;AAC1B,OAAO,EAAE,0BAA0B,EAAE,MAAM,uBAAuB,CAAC"}

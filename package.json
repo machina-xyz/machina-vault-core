@@ -48,12 +48,18 @@
     "./enclave": {
       "import": "./dist/enclave/index.js",
       "types": "./dist/enclave/index.d.ts"
+    },
+    "./ows": {
+      "import": "./dist/ows/index.js",
+      "types": "./dist/ows/index.d.ts"
     }
   },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "pnpm build"
@@ -64,6 +70,8 @@
     "@simplewebauthn/server": "^11.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
   }
 }
