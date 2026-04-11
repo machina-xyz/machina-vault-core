@@ -10,4 +10,3 @@ export type { RLPInput } from "./chains/evm.js";
 export { SolanaSigner } from "./chains/solana.js";
 export { SuiSigner } from "./chains/sui.js";
 export { rpcCall, rpcCallWithRetry, RpcError } from "./rpc.js";
-//# sourceMappingURL=index.d.ts.map

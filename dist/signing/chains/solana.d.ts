@@ -21,4 +21,3 @@ export declare class SolanaSigner implements ChainSigner {
     estimateGas(request: SignRequest): Promise<bigint>;
     getBalance(address: string, rpcUrl: string): Promise<BalanceResult>;
 }
-//# sourceMappingURL=solana.d.ts.map

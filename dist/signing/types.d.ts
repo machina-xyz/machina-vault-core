@@ -66,4 +66,3 @@ export interface ChainSigner {
     estimateGas(request: SignRequest): Promise<bigint>;
     getBalance(address: string, rpcUrl: string): Promise<BalanceResult>;
 }
-//# sourceMappingURL=types.d.ts.map

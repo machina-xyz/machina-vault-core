@@ -3,4 +3,3 @@
  * MAC-896: WebAuthn Passkey Wallet Creation + Secure Enclave Key Storage
  */
 export {};
-//# sourceMappingURL=types.js.map

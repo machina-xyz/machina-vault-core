@@ -34,4 +34,3 @@ export declare class SigningEngine {
      */
     getChain(chainId: string): ChainConfig | undefined;
 }
-//# sourceMappingURL=engine.d.ts.map

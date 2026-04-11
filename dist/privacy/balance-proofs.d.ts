@@ -96,4 +96,3 @@ export declare function createSolvencyProof(balances: Array<{
 export declare function verifySolvencyProof(totalCommitment: string, proofs: BalanceProof[]): {
     valid: boolean;
 };
-//# sourceMappingURL=balance-proofs.d.ts.map

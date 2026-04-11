@@ -48,4 +48,3 @@ export declare function createMCPChallenge(serverId: string): AuthChallenge;
  * @returns true if the response is valid
  */
 export declare function verifyMCPChallenge(challenge: AuthChallenge, response: string, serverSecret: Uint8Array): Promise<boolean>;
-//# sourceMappingURL=mcp-auth.d.ts.map

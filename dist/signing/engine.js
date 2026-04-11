@@ -76,4 +76,3 @@ export class SigningEngine {
         return this.chains.get(chainId);
     }
 }
-//# sourceMappingURL=engine.js.map

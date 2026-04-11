@@ -103,4 +103,3 @@ export declare function reshare(oldShares: MPCKeyShare[], config: ReshareConfig)
  * @returns New key shares (old ones should be securely deleted)
  */
 export declare function proactiveRefresh(currentShares: MPCKeyShare[]): MPCKeyShare[];
-//# sourceMappingURL=reshare.d.ts.map

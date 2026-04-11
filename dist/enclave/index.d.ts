@@ -12,4 +12,3 @@ export * from "./platform.js";
 export * from "./key-store.js";
 export * from "./attestation.js";
 export * from "./secure-channel.js";
-//# sourceMappingURL=index.d.ts.map

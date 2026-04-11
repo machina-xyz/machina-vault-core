@@ -373,4 +373,3 @@ function getDerivationPathForChain(chainId) {
             return undefined;
     }
 }
-//# sourceMappingURL=index.js.map

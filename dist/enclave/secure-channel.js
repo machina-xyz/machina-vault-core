@@ -84,4 +84,3 @@ export async function deriveChannelKeys(sharedSecret, info) {
     }, baseKey, { name: "HMAC", hash: "SHA-256", length: 256 }, false, ["sign", "verify"]);
     return { encryptKey, macKey };
 }
-//# sourceMappingURL=secure-channel.js.map

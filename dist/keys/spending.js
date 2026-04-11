@@ -134,4 +134,3 @@ function findSpendingLimit(limits, tokenAddress) {
     // No match
     return null;
 }
-//# sourceMappingURL=spending.js.map

@@ -1,37 +1,9 @@
 /**
- * @machina/vault-core
+ * @machina-xyz/vault-core
  *
- * Core primitives for MACHINA Vault — keyless secure enclave wallets for
- * autonomous agents. One passkey → one vault → all chains.
- *
- * Modules:
- *   passkey/   — WebAuthn credential creation & verification
- *   keys/      — 4-tier key hierarchy (Root → Operator → Agent → Session)
- *   signing/   — Chain-agnostic transaction signing (EVM, Solana, Sui)
- *   policy/    — TEE-enforced policy evaluation before signing
- *   identity/  — ERC-8004 agent identity + A2A Agent Card
- *   recovery/  — Social recovery & cloud backup
- *   mpc/       — MPC threshold signing (Feldman VSS + threshold Schnorr)
- *   privacy/   — Stealth addresses (ERC-5564) + ZK balance proofs
- *   auth/      — JWT, iframe SSO, MCP auth, A2A auth, API keys
- *   enclave/   — Platform detection, key store, attestation, secure channels
- *
- * For conflicting names, import directly from submodules:
- *   import { reconstructSecret } from "@machina/vault-core/recovery"
- *   import { reconstructSecret } from "@machina/vault-core/mpc"
- *   import { base64urlEncode } from "@machina/vault-core/auth"
+ * Institutional-grade crypto vault powered by Rust/WASM.
+ * One passkey → one vault → all chains.
  */
-export * from "./passkey/index.js";
-export * from "./keys/index.js";
-export * from "./signing/index.js";
-export * from "./policy/index.js";
-export * from "./identity/index.js";
-export { splitSecret, reconstructSecret, createRecoveryConfig, initiateRecovery, submitRecoveryShare, } from "./recovery/index.js";
-export type { RecoveryConfig, RecoveryGuardian, RecoveryRequest, RecoveryMethod, RecoveryStatus, } from "./recovery/index.js";
-export { keygenRound1, keygenRound2, keygenRound3, verifyKeygenRound3, generateKeyShares, thresholdSign, signRound1, signRound2, signRound3, signRound4, verifySignature, reshare, reshareRound1, reshareRound2, proactiveRefresh, commit, hashCommit, hashVerify, verify, toHex, fromHex, randomBytes, bytesToScalar, modN, constantTimeEqual, } from "./mpc/index.js";
-export type { MPCKeyShare, MPCSession, MPCSessionType, MPCSessionStatus, MPCSignRequest, MPCSignResult, PartyInfo, PedersenCommitment, ReshareConfig, KeygenRound1Msg, KeygenRound1State, KeygenRound2Msg, KeygenRound2State, KeygenRound3Msg, KeygenRound3State, ReshareRound1Msg, ReshareRound1State, ReshareSession, SignRound1Msg, SignRound1State, SignRound2Msg, SignRound2State, SignRound3Msg, SignRound3State, SignRound4Msg, } from "./mpc/index.js";
-export * from "./privacy/index.js";
-export { createJWT, verifyJWT, decodeJWT, textToBytes, bytesToText, createIframeSession, validateIframeOrigin, createMCPSession, verifyMCPChallenge, validateMCPToolCall, createA2AChallenge, createA2AAuthToken, verifyA2AAuthToken, negotiateCapabilities, hasScope, generateAPIKey, validateAPIKey, parseAPIKey, } from "./auth/index.js";
-export type { AuthChallenge, AuthToken, AuthSession, AuthError, IframeAuthConfig, MCPAuthConfig, A2AAuthConfig, APIKeyCredential, } from "./auth/index.js";
-export * from "./enclave/index.js";
-//# sourceMappingURL=index.d.ts.map
+export { MachinaVault, type VaultConfig, type WalletRecord } from "./vault.js";
+export { vault, initVault, type SignResult, type ChainAccount } from "./wasm/index.js";
+export { type VaultStore, IndexedDBVaultStore, MemoryVaultStore } from "./storage/index.js";

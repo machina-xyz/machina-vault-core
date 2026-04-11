@@ -40,4 +40,3 @@ export declare function decodeJWT(token: string): {
     payload: Record<string, unknown>;
 };
 export { base64urlEncode, base64urlDecode, textToBytes, bytesToText };
-//# sourceMappingURL=jwt.d.ts.map

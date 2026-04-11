@@ -154,4 +154,3 @@ function simpleHash(data) {
     }
     return "0x" + Array.from(result, (b) => b.toString(16).padStart(2, "0")).join("");
 }
-//# sourceMappingURL=registration.js.map

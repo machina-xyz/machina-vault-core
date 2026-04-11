@@ -463,4 +463,3 @@ function concatBytes(...arrays) {
 }
 // Re-exports for use by signing and reshare modules
 export { randomScalar, scalarToHex, hexToScalar, evaluatePolynomial, verifyFeldmanShare, modInverse, concatBytes, Point, CURVE_ORDER, };
-//# sourceMappingURL=keygen.js.map

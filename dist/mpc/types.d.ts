@@ -180,4 +180,3 @@ export interface ReshareRound1Msg {
      */
     commitments: string[];
 }
-//# sourceMappingURL=types.d.ts.map

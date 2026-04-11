@@ -82,4 +82,3 @@ function bytesToHex(bytes) {
     }
     return hex;
 }
-//# sourceMappingURL=session-key.js.map

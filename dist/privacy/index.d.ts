@@ -13,4 +13,3 @@ export * from "./types.js";
 export * from "./stealth-address.js";
 export * from "./balance-proofs.js";
 export * from "./scanning.js";
-//# sourceMappingURL=index.d.ts.map

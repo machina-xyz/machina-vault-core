@@ -23,4 +23,3 @@ export declare class SuiSigner implements ChainSigner {
     estimateGas(request: SignRequest): Promise<bigint>;
     getBalance(address: string, rpcUrl: string): Promise<BalanceResult>;
 }
-//# sourceMappingURL=sui.d.ts.map

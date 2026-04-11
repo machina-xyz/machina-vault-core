@@ -49,4 +49,3 @@ export declare function initiateRecovery(vaultId: string, config: RecoveryConfig
  * Submit a guardian share for recovery.
  */
 export declare function submitRecoveryShare(request: RecoveryRequest, guardianId: string): RecoveryRequest;
-//# sourceMappingURL=social-recovery.d.ts.map

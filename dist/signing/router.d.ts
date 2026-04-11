@@ -8,4 +8,3 @@ import type { ChainFamily, ChainSigner } from "./types.js";
  * Throws if the family is not supported.
  */
 export declare function getChainSigner(family: ChainFamily): ChainSigner;
-//# sourceMappingURL=router.d.ts.map

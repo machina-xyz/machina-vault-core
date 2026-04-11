@@ -112,4 +112,3 @@ function parseIso8601Duration(duration) {
         minutes * 60000 +
         seconds * 1000);
 }
-//# sourceMappingURL=rotation.js.map

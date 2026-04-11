@@ -10,4 +10,3 @@ export { evaluateCondition } from "./conditions.js";
 export { CONSERVATIVE_PRESET, STANDARD_PRESET, AGGRESSIVE_PRESET, LOCKDOWN_PRESET, } from "./presets.js";
 // Natural language parser
 export { parseNaturalLanguagePolicy } from "./natural-language.js";
-//# sourceMappingURL=index.js.map

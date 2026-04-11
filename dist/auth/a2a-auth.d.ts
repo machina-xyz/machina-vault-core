@@ -49,4 +49,3 @@ export declare function verifyA2AAuthToken(token: string, peerSecret: Uint8Array
  * @returns Intersection of capabilities
  */
 export declare function negotiateCapabilities(ourCapabilities: string[], peerCapabilities: string[]): string[];
-//# sourceMappingURL=a2a-auth.d.ts.map

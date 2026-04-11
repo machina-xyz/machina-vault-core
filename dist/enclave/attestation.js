@@ -349,4 +349,3 @@ function concatBytes(...arrays) {
     }
     return result;
 }
-//# sourceMappingURL=attestation.js.map

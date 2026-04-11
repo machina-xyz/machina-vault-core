@@ -30,4 +30,3 @@ export declare class PolicyEngine {
     private getActiveRulesSorted;
     private buildResult;
 }
-//# sourceMappingURL=engine.d.ts.map

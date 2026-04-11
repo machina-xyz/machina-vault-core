@@ -21,4 +21,3 @@ export const PERM = {
     VIEW_AUDIT_LOG: 14n,
     MANAGE_WEBHOOKS: 15n,
 };
-//# sourceMappingURL=types.js.map

@@ -24,4 +24,3 @@ export declare function confirmRegistration(identity: AgentIdentity, txHash: str
  * Update KYA metadata after sanctions screening completes.
  */
 export declare function updateKYACompliance(kya: KYAMetadata, sanctionsScreened: boolean, jurisdictions: string[]): KYAMetadata;
-//# sourceMappingURL=registration.d.ts.map

@@ -59,4 +59,3 @@ export declare function encodeAnnouncementMetadata(data: {
     schemeId: number;
     stealthAddress: string;
 }): string;
-//# sourceMappingURL=scanning.d.ts.map

@@ -40,4 +40,3 @@ export declare function resetDailySpend(key: VaultKey): VaultKey;
  * Returns a new VaultKey (immutable).
  */
 export declare function resetMonthlySpend(key: VaultKey): VaultKey;
-//# sourceMappingURL=spending.d.ts.map

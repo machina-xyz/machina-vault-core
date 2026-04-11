@@ -60,4 +60,3 @@ export function createOperatorKey(params) {
     };
     return { key, privateKey: derived.privateKey };
 }
-//# sourceMappingURL=operator-key.js.map

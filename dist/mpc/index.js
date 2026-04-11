@@ -13,4 +13,3 @@ export * from "./keygen.js";
 export * from "./signing.js";
 export * from "./reshare.js";
 export * from "./commitment.js";
-//# sourceMappingURL=index.js.map

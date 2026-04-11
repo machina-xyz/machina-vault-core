@@ -175,4 +175,3 @@ export function encodeAnnouncementMetadata(data) {
     metadata.set(addressTrimmed, 1);
     return bytesToHex(metadata);
 }
-//# sourceMappingURL=scanning.js.map

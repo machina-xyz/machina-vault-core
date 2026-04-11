@@ -42,4 +42,3 @@ export declare function createAgentKey(params: CreateAgentKeyParams): {
     key: VaultKey;
     privateKey: Uint8Array;
 };
-//# sourceMappingURL=agent-key.d.ts.map

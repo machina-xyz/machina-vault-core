@@ -155,4 +155,3 @@ declare function modInverse(a: bigint, m: bigint): bigint;
 declare function concatBytes(...arrays: Uint8Array[]): Uint8Array;
 export { randomScalar, scalarToHex, hexToScalar, evaluatePolynomial, verifyFeldmanShare, modInverse, concatBytes, Point, CURVE_ORDER, };
 export type { ProjectivePoint };
-//# sourceMappingURL=keygen.d.ts.map

@@ -34,4 +34,3 @@ export declare function createOperatorKey(params: CreateOperatorKeyParams): {
     key: VaultKey;
     privateKey: Uint8Array;
 };
-//# sourceMappingURL=operator-key.d.ts.map

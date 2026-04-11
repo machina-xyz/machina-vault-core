@@ -21,4 +21,3 @@ export { createSessionKey } from "./session-key.js";
 export { checkSpendingLimit, recordSpend, resetDailySpend, resetMonthlySpend, } from "./spending.js";
 // Key rotation
 export { shouldRotate, rotateKey } from "./rotation.js";
-//# sourceMappingURL=index.js.map

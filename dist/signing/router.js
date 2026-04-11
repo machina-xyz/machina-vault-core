@@ -21,4 +21,3 @@ export function getChainSigner(family) {
     }
     return signer;
 }
-//# sourceMappingURL=router.js.map

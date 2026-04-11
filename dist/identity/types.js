@@ -5,4 +5,3 @@
  * A2A Agent Card, and KYA (Know Your Agent) metadata.
  */
 export {};
-//# sourceMappingURL=types.js.map

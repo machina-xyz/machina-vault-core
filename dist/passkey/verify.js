@@ -212,4 +212,3 @@ function extractRpIdFromOrigin(origin) {
         return origin;
     }
 }
-//# sourceMappingURL=verify.js.map

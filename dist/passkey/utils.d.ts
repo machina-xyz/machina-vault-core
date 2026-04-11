@@ -22,4 +22,3 @@ export declare function hexToBuffer(hex: string): Uint8Array;
  * Concatenate multiple Uint8Arrays into a single Uint8Array.
  */
 export declare function concatBuffers(...buffers: Uint8Array[]): Uint8Array;
-//# sourceMappingURL=utils.d.ts.map

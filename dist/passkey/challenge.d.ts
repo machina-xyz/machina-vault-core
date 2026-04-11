@@ -19,4 +19,3 @@ export declare function validateChallenge(challenge: VaultChallenge): boolean;
  * Mutates the challenge object in place.
  */
 export declare function markChallengeUsed(challenge: VaultChallenge): void;
-//# sourceMappingURL=challenge.d.ts.map

@@ -107,4 +107,3 @@ export interface AuthError {
     /** Human-readable error message */
     message: string;
 }
-//# sourceMappingURL=types.d.ts.map

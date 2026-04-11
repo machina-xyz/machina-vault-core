@@ -16,4 +16,3 @@ export interface ConditionResult {
  * Returns whether the condition matched (triggered) and a reason string.
  */
 export declare function evaluateCondition(condition: PolicyCondition, request: PolicyEvalRequest, context: PolicyContext): ConditionResult;
-//# sourceMappingURL=conditions.d.ts.map

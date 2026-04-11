@@ -273,4 +273,3 @@ export class SolanaSigner {
         }
     }
 }
-//# sourceMappingURL=solana.js.map

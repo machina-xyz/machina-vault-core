@@ -17,4 +17,3 @@ import type { VaultKey } from "./types.js";
  * - No parent key (parentKeyId = null)
  */
 export declare function createRootKey(vaultId: string, publicKey: Uint8Array, address: string): VaultKey;
-//# sourceMappingURL=root-key.d.ts.map

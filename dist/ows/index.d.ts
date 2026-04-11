@@ -74,4 +74,3 @@ export declare function importOwsToMachina(owsWallet: OwsWallet, machinaAgentId:
  * Returns a PolicyWrappedSigner compatible with MACHINA's signing pipeline.
  */
 export declare function wrapOwsSigning(owsWallet: OwsWallet, policyRules: PolicyRule[]): PolicyWrappedSigner;
-//# sourceMappingURL=index.d.ts.map

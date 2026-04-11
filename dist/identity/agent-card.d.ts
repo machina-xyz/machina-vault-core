@@ -27,4 +27,3 @@ export declare function serializeAgentCard(card: A2AAgentCard): string;
  * Validate that an agent card has all required fields.
  */
 export declare function validateAgentCard(card: unknown): card is A2AAgentCard;
-//# sourceMappingURL=agent-card.d.ts.map

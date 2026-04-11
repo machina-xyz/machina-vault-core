@@ -29,4 +29,3 @@ export declare function isHardwareBacked(platform: EnclavePlatform): boolean;
  * Check whether a platform supports a specific capability.
  */
 export declare function platformSupportsCapability(platform: EnclavePlatform, capability: EnclaveCapability): boolean;
-//# sourceMappingURL=platform.d.ts.map

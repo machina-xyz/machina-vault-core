@@ -290,4 +290,3 @@ function skipCborValue(data, offset) {
             throw new Error(`Unsupported CBOR major type: ${major}`);
     }
 }
-//# sourceMappingURL=create.js.map

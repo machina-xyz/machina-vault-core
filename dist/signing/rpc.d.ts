@@ -15,4 +15,3 @@ export declare function rpcCall(url: string, method: string, params: unknown[]):
  * JSON-RPC call with exponential backoff retry.
  */
 export declare function rpcCallWithRetry(url: string, method: string, params: unknown[], retries?: number): Promise<unknown>;
-//# sourceMappingURL=rpc.d.ts.map

@@ -148,4 +148,3 @@ export function hasScope(credential, requiredScope) {
     }
     return false;
 }
-//# sourceMappingURL=api-keys.js.map

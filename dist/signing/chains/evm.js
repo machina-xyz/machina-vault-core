@@ -237,4 +237,3 @@ export class EvmSigner {
         return Number(BigInt(result));
     }
 }
-//# sourceMappingURL=evm.js.map

@@ -183,4 +183,3 @@ function hasMobileBiometric() {
         return false;
     }
 }
-//# sourceMappingURL=platform.js.map

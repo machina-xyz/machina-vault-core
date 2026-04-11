@@ -79,4 +79,3 @@ declare function modN(v: bigint): bigint;
 /** Constant-time comparison of two Uint8Arrays */
 declare function constantTimeEqual(a: Uint8Array, b: Uint8Array): boolean;
 export { toHex, fromHex, randomBytes, bytesToScalar, modN, constantTimeEqual };
-//# sourceMappingURL=commitment.d.ts.map

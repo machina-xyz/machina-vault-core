@@ -74,4 +74,3 @@ export interface VaultChallenge {
     /** Whether this challenge has been consumed */
     used: boolean;
 }
-//# sourceMappingURL=types.d.ts.map

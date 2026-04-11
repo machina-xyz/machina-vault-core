@@ -69,4 +69,3 @@ export declare function generateSessionKey(): {
     publicKey: Uint8Array;
     address: string;
 };
-//# sourceMappingURL=derivation.d.ts.map

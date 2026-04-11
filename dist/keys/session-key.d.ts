@@ -38,4 +38,3 @@ export declare function createSessionKey(params: CreateSessionKeyParams): {
     key: VaultKey;
     privateKey: Uint8Array;
 };
-//# sourceMappingURL=session-key.d.ts.map

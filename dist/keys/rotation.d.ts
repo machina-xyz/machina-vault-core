@@ -45,4 +45,3 @@ export interface RotateKeyResult {
  * Root keys are rotated via recovery. Session keys just expire.
  */
 export declare function rotateKey(params: RotateKeyParams): RotateKeyResult;
-//# sourceMappingURL=rotation.d.ts.map

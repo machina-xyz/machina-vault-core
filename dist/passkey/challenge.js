@@ -42,4 +42,3 @@ export function validateChallenge(challenge) {
 export function markChallengeUsed(challenge) {
     challenge.used = true;
 }
-//# sourceMappingURL=challenge.js.map

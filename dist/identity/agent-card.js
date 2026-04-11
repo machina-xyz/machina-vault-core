@@ -140,4 +140,3 @@ export function validateAgentCard(card) {
         c.authentication != null &&
         Array.isArray(c.skills));
 }
-//# sourceMappingURL=agent-card.js.map

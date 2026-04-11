@@ -103,4 +103,3 @@ export declare function thresholdSign(shares: MPCKeyShare[], messageHex: string)
  * @param publicKeyHex - Compressed secp256k1 public key (hex)
  */
 export declare function verifySignature(messageHex: string, signatureHex: string, publicKeyHex: string): boolean;
-//# sourceMappingURL=signing.d.ts.map

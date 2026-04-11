@@ -14,4 +14,3 @@ import type { VaultCredential, CreateVaultOptions } from "./types.js";
  *         authenticator response cannot be parsed.
  */
 export declare function createVaultCredential(options: CreateVaultOptions): Promise<VaultCredential>;
-//# sourceMappingURL=create.d.ts.map

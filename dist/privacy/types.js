@@ -7,4 +7,3 @@
  */
 /** ERC-5564 scheme ID for secp256k1 */
 export const SCHEME_ID_SECP256K1 = 1;
-//# sourceMappingURL=types.js.map

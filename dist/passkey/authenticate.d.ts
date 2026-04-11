@@ -15,4 +15,3 @@ import type { AuthenticateOptions, AuthenticationResult } from "./types.js";
  * @throws If the WebAuthn API is unavailable or the user cancels
  */
 export declare function authenticateVault(options: AuthenticateOptions): Promise<AuthenticationResult>;
-//# sourceMappingURL=authenticate.d.ts.map

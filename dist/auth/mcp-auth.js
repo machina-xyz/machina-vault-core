@@ -162,4 +162,3 @@ export async function verifyMCPChallenge(challenge, response, serverSecret) {
     }
     return diff === 0;
 }
-//# sourceMappingURL=mcp-auth.js.map

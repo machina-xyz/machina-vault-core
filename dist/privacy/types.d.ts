@@ -127,4 +127,3 @@ export interface AnnouncementLog {
     /** Block number of the announcement */
     blockNumber: number;
 }
-//# sourceMappingURL=types.d.ts.map

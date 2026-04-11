@@ -49,4 +49,3 @@ export declare function requiredPermissionForTier(childTier: KeyTier): bigint;
  * Throws if the hierarchy or permission check fails.
  */
 export declare function validateKeyCreation(parentTier: KeyTier, parentPermissions: KeyPermissions, childTier: KeyTier): void;
-//# sourceMappingURL=permissions.d.ts.map

@@ -21,4 +21,3 @@ export declare function deriveVaultAddress(publicKeyX: Uint8Array, publicKeyY: U
  * @see https://eips.ethereum.org/EIPS/eip-55
  */
 export declare function toChecksumAddress(address: string): string;
-//# sourceMappingURL=derive-address.d.ts.map

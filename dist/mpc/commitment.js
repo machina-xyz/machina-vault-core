@@ -220,4 +220,3 @@ function constantTimeEqual(a, b) {
 }
 // Re-export hex helpers for use by other MPC modules
 export { toHex, fromHex, randomBytes, bytesToScalar, modN, constantTimeEqual };
-//# sourceMappingURL=commitment.js.map

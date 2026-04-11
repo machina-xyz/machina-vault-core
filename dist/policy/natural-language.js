@@ -252,4 +252,3 @@ export function parseNaturalLanguagePolicy(input) {
     }
     return null;
 }
-//# sourceMappingURL=natural-language.js.map

@@ -6,4 +6,3 @@
  * and proactive secret resharing protocols.
  */
 export {};
-//# sourceMappingURL=types.js.map

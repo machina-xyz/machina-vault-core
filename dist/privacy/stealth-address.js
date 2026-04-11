@@ -244,4 +244,3 @@ function bigIntToBytes(value, length) {
     }
     return bytes;
 }
-//# sourceMappingURL=stealth-address.js.map

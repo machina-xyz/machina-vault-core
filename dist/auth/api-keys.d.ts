@@ -49,4 +49,3 @@ export declare function parseAPIKey(rawKey: string): {
  * @returns true if the credential has the required scope
  */
 export declare function hasScope(credential: APIKeyCredential, requiredScope: string): boolean;
-//# sourceMappingURL=api-keys.d.ts.map

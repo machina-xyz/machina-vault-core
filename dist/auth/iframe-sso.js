@@ -164,4 +164,3 @@ export function revokeIframeSession(_sessionId) {
     // This is intentionally a no-op — callers should persist the
     // revocation flag in their storage layer after calling this.
 }
-//# sourceMappingURL=iframe-sso.js.map

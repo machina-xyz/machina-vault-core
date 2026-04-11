@@ -11,4 +11,3 @@ export { createVaultCredential } from "./create.js";
 export { authenticateVault } from "./authenticate.js";
 export { verifyRegistration, verifyAuthentication, } from "./verify.js";
 export { base64urlEncode, base64urlDecode, bufferToHex, hexToBuffer, concatBuffers, } from "./utils.js";
-//# sourceMappingURL=index.d.ts.map

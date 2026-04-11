@@ -54,4 +54,3 @@ export declare function parsePostMessagePayload(data: unknown): AuthSession | nu
  * @param _sessionId - The session to revoke
  */
 export declare function revokeIframeSession(_sessionId: string): void;
-//# sourceMappingURL=iframe-sso.d.ts.map

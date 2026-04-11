@@ -127,4 +127,3 @@ export interface IdentityRegistrationRequest {
     agentType?: KYAMetadata["agentType"];
     operatingParams?: Partial<KYAMetadata["operatingParams"]>;
 }
-//# sourceMappingURL=types.d.ts.map

@@ -12,4 +12,3 @@ export { SolanaSigner } from "./chains/solana.js";
 export { SuiSigner } from "./chains/sui.js";
 // RPC utilities
 export { rpcCall, rpcCallWithRetry, RpcError } from "./rpc.js";
-//# sourceMappingURL=index.js.map

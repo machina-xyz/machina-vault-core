@@ -31,4 +31,3 @@ export declare function verifyRegistration(credential: VaultCredential, challeng
  * @returns true if the authentication is valid
  */
 export declare function verifyAuthentication(auth: AuthenticationResult, storedCredential: VaultCredential, challenge: VaultChallenge, expectedOrigin: string): boolean;
-//# sourceMappingURL=verify.d.ts.map

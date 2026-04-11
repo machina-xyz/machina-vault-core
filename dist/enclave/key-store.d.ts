@@ -18,4 +18,3 @@ import type { EnclavePlatform, KeyStore } from "./types.js";
  *   back to `crypto.subtle`.
  */
 export declare function createKeyStore(platform: EnclavePlatform): KeyStore;
-//# sourceMappingURL=key-store.d.ts.map

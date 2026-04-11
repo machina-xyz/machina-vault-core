@@ -8,4 +8,3 @@ export { evaluateCondition } from "./conditions.js";
 export type { ConditionResult } from "./conditions.js";
 export { CONSERVATIVE_PRESET, STANDARD_PRESET, AGGRESSIVE_PRESET, LOCKDOWN_PRESET, } from "./presets.js";
 export { parseNaturalLanguagePolicy } from "./natural-language.js";
-//# sourceMappingURL=index.d.ts.map

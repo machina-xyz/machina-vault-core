@@ -54,4 +54,3 @@ export function toChecksumAddress(address) {
     }
     return checksummed;
 }
-//# sourceMappingURL=derive-address.js.map

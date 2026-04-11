@@ -227,4 +227,3 @@ export function evaluateCondition(condition, request, context) {
     }
     return evaluator(condition, request, context);
 }
-//# sourceMappingURL=conditions.js.map

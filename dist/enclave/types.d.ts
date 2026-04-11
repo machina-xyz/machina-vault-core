@@ -111,4 +111,3 @@ export interface SecureChannel {
     /** Get the derived shared secret */
     getSharedSecret(): Uint8Array;
 }
-//# sourceMappingURL=types.d.ts.map

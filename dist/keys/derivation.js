@@ -221,4 +221,3 @@ function bytesToHex(bytes) {
     }
     return hex;
 }
-//# sourceMappingURL=derivation.js.map

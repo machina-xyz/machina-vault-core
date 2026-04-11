@@ -54,4 +54,3 @@ export async function authenticateVault(options) {
         verified: false, // Must be verified server-side via verify.ts
     };
 }
-//# sourceMappingURL=authenticate.js.map

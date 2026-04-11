@@ -356,4 +356,3 @@ function modInverse(a, m) {
     }
     return ((old_s % m) + m) % m;
 }
-//# sourceMappingURL=signing.js.map

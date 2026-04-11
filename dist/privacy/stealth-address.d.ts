@@ -66,4 +66,3 @@ export declare function checkStealthAddress(announcement: AnnouncementLog, viewi
  * @returns Stealth private key (hex)
  */
 export declare function computeStealthPrivateKey(spendingKey: string, viewingKey: string, ephemeralPubKey: string): string;
-//# sourceMappingURL=stealth-address.d.ts.map

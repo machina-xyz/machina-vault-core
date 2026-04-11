@@ -19,4 +19,3 @@ export { checkSpendingLimit, recordSpend, resetDailySpend, resetMonthlySpend, } 
 export type { SpendCheckResult } from "./spending.js";
 export { shouldRotate, rotateKey } from "./rotation.js";
 export type { RotateKeyParams, RotateKeyResult } from "./rotation.js";
-//# sourceMappingURL=index.d.ts.map

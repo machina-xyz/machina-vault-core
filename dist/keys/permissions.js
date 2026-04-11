@@ -117,4 +117,3 @@ export function validateKeyCreation(parentTier, parentPermissions, childTier) {
         throw new Error(`Permission denied: parent key lacks CREATE_${childTier.toUpperCase()}_KEY permission`);
     }
 }
-//# sourceMappingURL=permissions.js.map

@@ -51,4 +51,3 @@ export declare function updateLongevityScore(snapshot: ReputationSnapshot, accou
  * Used for reputation-gated operations (e.g., large transfers, governance voting).
  */
 export declare function meetsReputationThreshold(snapshot: ReputationSnapshot, minScore?: number, minTier?: ReputationTier): boolean;
-//# sourceMappingURL=reputation.d.ts.map

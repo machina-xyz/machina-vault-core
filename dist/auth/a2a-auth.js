@@ -106,4 +106,3 @@ export function negotiateCapabilities(ourCapabilities, peerCapabilities) {
     const peerSet = new Set(peerCapabilities);
     return ourCapabilities.filter((cap) => peerSet.has(cap));
 }
-//# sourceMappingURL=a2a-auth.js.map

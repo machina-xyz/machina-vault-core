@@ -256,4 +256,3 @@ export class SuiSigner {
         }
     }
 }
-//# sourceMappingURL=sui.js.map

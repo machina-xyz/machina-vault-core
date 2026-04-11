@@ -14,4 +14,3 @@ export declare class EvmSigner implements ChainSigner {
     getBalance(address: string, rpcUrl: string): Promise<BalanceResult>;
     private getNonce;
 }
-//# sourceMappingURL=evm.d.ts.map

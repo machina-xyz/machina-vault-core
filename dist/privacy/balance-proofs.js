@@ -485,4 +485,3 @@ export function verifySolvencyProof(totalCommitment, proofs) {
         return { valid: false };
     }
 }
-//# sourceMappingURL=balance-proofs.js.map

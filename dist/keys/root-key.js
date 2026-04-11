@@ -49,4 +49,3 @@ export function createRootKey(vaultId, publicKey, address) {
         lastResetMonth: month,
     };
 }
-//# sourceMappingURL=root-key.js.map

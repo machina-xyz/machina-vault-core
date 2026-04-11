@@ -30,4 +30,3 @@ export declare function deriveChannelKeys(sharedSecret: Uint8Array, info: string
     encryptKey: CryptoKey;
     macKey: CryptoKey;
 }>;
-//# sourceMappingURL=secure-channel.d.ts.map

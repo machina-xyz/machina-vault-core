@@ -41,4 +41,3 @@ export declare function createAttestationChallenge(): {
  * @param maxAgeMs - Maximum acceptable age in milliseconds (default: 5 min).
  */
 export declare function isAttestationFresh(report: AttestationReport, maxAgeMs?: number): boolean;
-//# sourceMappingURL=attestation.d.ts.map

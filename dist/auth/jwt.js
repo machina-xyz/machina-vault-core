@@ -176,4 +176,3 @@ export function decodeJWT(token) {
 }
 // Re-export helpers used by other auth modules
 export { base64urlEncode, base64urlDecode, textToBytes, bytesToText };
-//# sourceMappingURL=jwt.js.map

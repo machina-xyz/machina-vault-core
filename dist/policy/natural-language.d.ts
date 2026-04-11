@@ -19,4 +19,3 @@ import type { PolicyRule } from "./types.js";
  *  - "daily limit of $5000"
  */
 export declare function parseNaturalLanguagePolicy(input: string): PolicyRule | null;
-//# sourceMappingURL=natural-language.d.ts.map

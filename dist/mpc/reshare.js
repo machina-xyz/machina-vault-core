@@ -282,4 +282,3 @@ export function proactiveRefresh(currentShares) {
     };
     return reshare(currentShares, config);
 }
-//# sourceMappingURL=reshare.js.map

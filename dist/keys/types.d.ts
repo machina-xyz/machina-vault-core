@@ -91,4 +91,3 @@ export interface VaultKey {
     /** ISO month (YYYY-MM) of last monthly spend reset */
     lastResetMonth: string;
 }
-//# sourceMappingURL=types.d.ts.map
