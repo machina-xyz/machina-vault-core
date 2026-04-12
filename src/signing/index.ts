@@ -1,6 +1,6 @@
 /**
  * MAC-898: Chain-Agnostic Signing Engine
- * Module exports for @machina/vault-core/signing
+ * Module exports for @machina-xyz/vault-core/signing
  */
 
 // Core types

@@ -2,7 +2,7 @@
  * MACHINA Vault — WebAuthn Passkey Wallet Module
  * MAC-896: WebAuthn Passkey Wallet Creation + Secure Enclave Key Storage
  *
- * @module @machina/vault-core/passkey
+ * @module @machina-xyz/vault-core/passkey
  */
 
 // Types
