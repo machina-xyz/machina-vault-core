@@ -1,0 +1,16 @@
+{
+  "name": "@machina-xyz/machina-wasm",
+  "type": "module",
+  "description": "WASM bindings for the MACHINA wallet",
+  "version": "0.1.0",
+  "files": [
+    "machina_wasm_bg.wasm",
+    "machina_wasm.js",
+    "machina_wasm.d.ts"
+  ],
+  "main": "machina_wasm.js",
+  "types": "machina_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

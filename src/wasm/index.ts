@@ -39,21 +39,36 @@ let wasmModule: WasmModule | null = null;
 
 /**
  * Initialize the WASM vault. Must be called before any crypto operations.
+ *
+ * Loading modes:
+ * 1. No args: auto-loads bundled WASM binary
+ * 2. Function: custom init function (e.g., from external WASM package)
+ * 3. String/URL: load WASM from a URL
  */
-export async function initVault(wasmSource?: string | ArrayBuffer | undefined): Promise<void> {
+export async function initVault(wasmSource?: string | ArrayBuffer | (() => Promise<any>) | undefined): Promise<void> {
   if (wasmModule) return;
-  // Dynamic import — the WASM package is loaded at runtime
-  // In production: npm install @machina-xyz/vault-wasm
-  // For now: pass the WASM init function directly
+
+  // Mode 1: Custom init function
   if (typeof wasmSource === "function") {
-    // Direct init function passed (for testing or custom loading)
-    await (wasmSource as unknown as () => Promise<void>)();
+    await wasmSource();
     return;
   }
-  // Placeholder: in production, this loads the WASM binary
+
+  // Mode 2: Auto-load bundled WASM
+  try {
+    const wasm = await import("./pkg/machina_wasm.js");
+    await wasm.default();
+    // The WASM module exports functions directly — set them as our module
+    wasmModule = wasm as unknown as WasmModule;
+    return;
+  } catch (_e) {
+    // Bundled WASM not available — fall through to error
+  }
+
   throw new Error(
-    "WASM not loaded. Install @machina-xyz/vault-wasm and call initVault() with the init function, " +
-    "or load the WASM binary from a URL."
+    "WASM not loaded. The bundled WASM binary was not found. " +
+    "Ensure @machina-xyz/vault-core was installed correctly, " +
+    "or pass a custom init function to initVault()."
   );
 }
 
